@@ -1,1 +1,27 @@
-<p>index works!</p>
+<!-- IMG SLIDER -->
+<div class="container-fluid heroContainer mt-2">
+      <ngb-carousel #myCarousel="ngbCarousel" class="w-75 mx-auto">
+        <ng-template ngbSlide *ngFor="let heroimg of heroimages;let i = index" id="{{i}}">
+          <div class="picsum-img-wrapper d-flex justify-content-center">
+             <img [src]="heroimg.src" alt="Random first slide" class="heroImg">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+</div>
+
+<div class="container-fluid w-75 mx-auto my-5">  
+    <div class="heroText row row-cols-1 row-cols-lg-2 justify-content-center">
+      <div class="col d-flex justify-content-center align-items-center w-25">
+        <img src="../../assets/myimg/portrait.jpg" alt="" class="heroTextImg">
+      </div>
+      <div class="col d-flex flex-column p-0 justify-content-evenly">
+        <div class="container-fluid d-flex flex-column flex-fill align-items-center text-wrap w-75 gap-2">
+          <p class="text-monospace fs-3 fw-bold text-center">"Who takes your pictures is important"</p>
+          <p class="text-center fs-5">"Hello, I am Mat"</p>
+          <p class="text-center fs-6">I discovered photography while backpacking around the world and since then it has become a big part of my life. I quickly discovered that I am especially attracted to photographing people and set a goal to open my own portrait studio one day. In 2019 Studio CodeFactory has become a reality.</p>
+          <p class="text-center fs-5"> " Feel good, look good ! "</p>
+          <p class="text-center fs-6">My goal is to create a personal, simple and pleasant portrait photo shoot for you, where you can feel comfortable and we build a relaxed atmosphere. We work together to authentically reflect your personality and show you from your most beautiful and charming side.</p>
+        </div>
+      </div>
+    </div>
+  </div>

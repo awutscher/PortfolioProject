@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Iheroimages } from './Iheroimg';
+import { heroimages } from './heroimg';
 
 @Component({
   selector: 'app-index',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index.component.css']
 })
 export class IndexComponent implements OnInit {
+
+  heroimages:Iheroimages[] = heroimages;
 
   constructor() { }
 
