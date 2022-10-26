@@ -1,6 +1,5 @@
 .heroContainer {
     min-height: 70vh;
-
 }
 
 
@@ -40,3 +39,91 @@
   height: 100%;
 }
 
+/* Caption */
+
+.carousel-text{
+  margin-bottom: 5%;
+  padding: 10px;
+  font-size: 300%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  color: black;
+}
+
+
+/* about me field */ 
+.bg-gray {
+  background-color: rgba(0, 0, 0, 0.2);;
+}
+
+
+/* languages */
+/* Textstyles */
+ 
+.h2{
+  width: fit-content;
+}
+
+/* Images / whole divs */
+.img{
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.even{
+  margin-left: -10%;
+  text-align: left;
+}
+
+.odd{
+  margin-right: -10%;
+  text-align: right;
+}
+
+
+/* Media Queries */
+
+/* on small screen remove negative margins and change card-div width */
+@media only screen and (min-width: 992px){
+  .card-div{
+      width:40%;
+      min-height: 200px;
+      transform: translateX(0);
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .card-div{
+      width:80%;
+      min-height: 200px;
+      transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .card-div{
+      width: 100%;
+      min-height: 200px;
+  }
+  .even{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  .odd{
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .card-div{
+      width:40%;
+      min-height: 200px;
+      transform: translateX(0);
+  }
+}

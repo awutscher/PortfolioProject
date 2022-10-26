@@ -1,26 +1,26 @@
 export const heroimages = [
     {
         src: "../../assets/heroImages/heroimg1.jpg",
-        text: "hello world"
+        text: "Teamwork"
     },
     {
         src: "../../assets/heroImages/heroimg2.jpg",
-        text: "hello world"
+        text: "Flexibility"
     },
     {
         src: "../../assets/heroImages/heroimg3.jpg",
-        text: "hello world"
+        text: "Hands on Mentality"
     },
     {
         src: "../../assets/heroImages/heroimg4.jpg",
-        text: "hello world"
+        text: "Motivation"
     },
     {
         src: "../../assets/heroImages/heroimg5.jpg",
-        text: "hello world"
+        text: "Determination"
     },
     {
         src: "../../assets/heroImages/heroimg6.jpg",
-        text: "hello world"
+        text: "Resilience"
     }
 ];

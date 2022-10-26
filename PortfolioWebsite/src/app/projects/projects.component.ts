@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Iheroimages } from './Iheroimg';
-import { heroimages } from './heroimg';
-import { Ilanguages } from './Ilanguages';
-import { languages } from './languages';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { Iprojects } from './Iprojects';
+import { projects } from './projects';
+import { trigger, state, style, animate, transition } from '@angular/animations'
+
 
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.css'],
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.css'],
   animations: [
 
     //slide in from left side
@@ -32,10 +31,8 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     ])
   ]})
 
-export class IndexComponent implements OnInit {
-
-  heroimages:Iheroimages[] = heroimages;
-  languages:Ilanguages[]= languages;
+export class ProjectsComponent implements OnInit {
+  projects:Iprojects[]= projects;
   constructor() { }
 
   ngOnInit(): void {

@@ -1,27 +1,48 @@
 <!-- IMG SLIDER -->
-<div class="container-fluid heroContainer mt-2">
+<div class="container-fluid heroContainer">
       <ngb-carousel #myCarousel="ngbCarousel" class="w-75 mx-auto">
         <ng-template ngbSlide *ngFor="let heroimg of heroimages;let i = index" id="{{i}}">
           <div class="picsum-img-wrapper d-flex justify-content-center">
              <img [src]="heroimg.src" alt="Random first slide" class="heroImg">
           </div>
+          <div class="carousel-caption d-none d-md-block carousel-text">
+            <p>{{heroimg.text}}</p>
+          </div>
         </ng-template>
       </ngb-carousel>
 </div>
-
-<div class="container-fluid w-75 mx-auto my-5">  
-    <div class="heroText row row-cols-1 row-cols-lg-2 justify-content-center">
-      <div class="col d-flex justify-content-center align-items-center w-25">
-        <img src="../../assets/myimg/portrait.jpg" alt="" class="heroTextImg">
+<!--About me -->
+<div class="bg-gray p-1">
+  <div class="container-fluid w-75 mx-auto my-5">  
+      <div class="heroText row row-cols-1 row-cols-lg-2 justify-content-center">
+        <div class="col d-flex justify-content-center align-items-center w-25">
+          <img src="../../assets/myimg/portrait.jpg" alt="" class="heroTextImg">
+        </div>
+        <div class="col d-flex flex-column p-0 justify-content-evenly">
+          <div class="container-fluid d-flex flex-column align-items-center text-wrap w-75 gap-2">
+            <p class="text-monospace fs-3 fw-bold text-center">"Hallo ! Ich bin Alex"</p>
+            <p class="text-center fs-6">Mit Front-End Development habe ich den Weg gefunden, den ich nach 6 Jahren in der Gastronomie und 3 Jahren im öffentlichen Verkehr gehen will.
+            </p>
+            <h5 class="text-monospace text-center">Was ist mein Ziel ?</h5>
+            <p class="text-center fs-6">Nach meiner Ausbildung bei Codefactory bin ich nun auf der Suche nach einer Stelle als Junior Front-End Developer um möglichst schnell Erfahrung zu sammeln und dazu zu lernen.</p>
+          </div>
+        </div>
       </div>
-      <div class="col d-flex flex-column p-0 justify-content-evenly">
-        <div class="container-fluid d-flex flex-column flex-fill align-items-center text-wrap w-75 gap-2">
-          <p class="text-monospace fs-3 fw-bold text-center">"Who takes your pictures is important"</p>
-          <p class="text-center fs-5">"Hello, I am Mat"</p>
-          <p class="text-center fs-6">I discovered photography while backpacking around the world and since then it has become a big part of my life. I quickly discovered that I am especially attracted to photographing people and set a goal to open my own portrait studio one day. In 2019 Studio CodeFactory has become a reality.</p>
-          <p class="text-center fs-5"> " Feel good, look good ! "</p>
-          <p class="text-center fs-6">My goal is to create a personal, simple and pleasant portrait photo shoot for you, where you can feel comfortable and we build a relaxed atmosphere. We work together to authentically reflect your personality and show you from your most beautiful and charming side.</p>
+  </div>
+</div>
+<!-- Languages -->
+<div class="container">
+    <div class="p-3 d-flex justify-content-center">
+        <h2 class="p-3 bg-dark text-white">Welche Sprachen spreche Ich?</h2>
+    </div>
+    <div class="d-flex justify-content-around mb-4 flex-wrap">
+    <div *ngFor="let language of languages">
+      <div class="card mt-2 mb-2" style="width: 18rem;">
+        <img src="{{language.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{language.name}}</h5>
         </div>
       </div>
     </div>
-  </div>
+    </div>
+</div>
