@@ -4,10 +4,26 @@
     overflow: hidden;
 }
 
+/* Light Theme */
+
 .light{
-    background-color: aqua;
+    background-color: white;
+    color: black;
+}
+/* 
+.light nav {
+    background-color: rgba(0, 0, 0, 0.81);
 }
 
+.light nav .navbar-logo {
+    background-color: rgb(0, 0, 0);
+    color: white;
+} */
+
+
+/* Dark Theme */
+
 .dark{
-    background-color: black;
+    background-color: rgb(33, 33, 33);
+    color: white; /* noch wechseln bei index text auf karten */
 }

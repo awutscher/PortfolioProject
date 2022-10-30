@@ -15,6 +15,7 @@ export class NavbarComponent implements OnInit {
     private localStorage: ThemeStorageService
     ) { }
   ngOnInit(): void {
+    this.localStorage.getTheme("theme");
   }
 
    public toggleTheme(): string | null{ // WORKS ! //
@@ -28,6 +29,4 @@ export class NavbarComponent implements OnInit {
       
     }
   }
-
-
 }
