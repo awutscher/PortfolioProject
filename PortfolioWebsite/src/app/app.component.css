@@ -3,3 +3,11 @@
     margin: 0;
     overflow: hidden;
 }
+
+.light{
+    background-color: aqua;
+}
+
+.dark{
+    background-color: black;
+}

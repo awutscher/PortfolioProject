@@ -12,6 +12,20 @@
           <li class="nav-item">
             <a class="nav-link active" routerLink="projects">Projekte</a>
           </li>
+          <li>
+            <div class="d-flex">
+              <div>
+                <a class="bi bi-sun-fill"></a>
+              </div>
+              <div class="form-check form-switch ms-auto">
+                  <label class="form-check-label" for="lightSwitch"></label>
+                  <input class="form-check-input" type="checkbox" id="lightSwitch" (click)="toggleTheme()">
+              </div>
+              <div>
+                <a class="bi bi-moon-fill"></a>
+              </div>
+            </div>
+          </li>
           <!-- to be implemented -->
           <!-- <li class="nav-item">
             <a class="nav-link active" href="#">Contact</a>
