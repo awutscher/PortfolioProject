@@ -1,18 +1,12 @@
 .heroContainer {
-    min-height: 70vh;
+  min-height: 70vh;
 }
 
-
-/* .carousel-item {
-
-} */
-
- .heroImg {
-    object-fit: cover;
-    /* object-position: center; */
-    height: 70vh;
-    min-width: 100%;
-  }
+.heroImg {
+  object-fit: cover;
+  height: 70vh;
+  min-width: 100%;
+}
 
 .heroText {
   min-height: 40vh;
@@ -49,14 +43,6 @@
   border-radius: 10px;
   color: black;
 }
-
-
-/* about me field */ 
-/* .bg-gray {
-  background-color: rgba(0, 0, 0, 0.2);;
-} */
-
-
 /* languages */
 /* Textstyles */
  
@@ -84,6 +70,11 @@
   text-align: right;
 }
 
+/* What languages do i speek header */
+
+.headerDiv h2{
+  border-radius: 20px;
+}
 
 /* Media Queries */
 
