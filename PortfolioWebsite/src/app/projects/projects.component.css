@@ -4,6 +4,12 @@ h2{
     width: fit-content;
 }
 
+/* Formchanges */
+
+.header{
+    border-radius: 20px;
+}
+
 /* Images / whole divs */
 img{
     border-radius: 50%;
