@@ -14,11 +14,8 @@ export class NavbarComponent implements OnInit {
     private route: ActivatedRoute,
     private localStorage: ThemeStorageService
     ) { }
-  ngOnInit(): void {
-    this.localStorage.getTheme("theme");
-  }
 
-   public toggleTheme(): string | null{ // WORKS ! //
+  public toggleTheme(): string | null{ // WORKS ! //
     if(this.localStorage.getTheme("theme") === "dark"){
       this.localStorage.saveTheme("theme", "light");
       return this.localStorage.getTheme("theme");
@@ -29,4 +26,11 @@ export class NavbarComponent implements OnInit {
       
     }
   }
+
+
+  ngOnInit(): void {
+    this.localStorage.getTheme("theme");
+  }
+
+   
 }
