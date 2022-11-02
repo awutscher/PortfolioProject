@@ -20,13 +20,10 @@ export class AppComponent {
   changeTheme(){
     let currentTheme= this.localStorage.getTheme("theme");
     if(currentTheme == "light" || this.body.nativeElement.classList.contains('light')){
-      this.body.nativeElement.classList.add("dark");
-      this.body.nativeElement.classList.remove("light");
-      return console.log("YES")
+      this.body.nativeElement.classList.replace("light", "dark");
     }
     else{
-      this.body.nativeElement.classList.remove("dark");
-      this.body.nativeElement.classList.add("light");
+      this.body.nativeElement.classList.replace("dark", "light");
     }
   }
   ngOnInit(){
